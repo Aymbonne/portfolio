@@ -44,9 +44,14 @@ p, li{
     padding: 0 20px;
 } 
 
-.cont-nav a {
+.cont-nav a{
     color: white;
     text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.cont-nav a:hover{
+    color: #7F9E94;
 }
 
 /* ----------------------- */
@@ -178,21 +183,18 @@ p, li{
     background-color: #7F9E94;
 }
 
+
 .cont-formation1{
     display: inline-block;
     background-color: #cccccc;
     border-radius: 5px;
     border: solid 2px #717171;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15); /* Ombre subtile bas-droite */
+    box-shadow: 4px 4px 8px #00000026; /* Ombre subtile bas-droite */
     /* box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.3); Ombre bas-droite uniquement */
     padding: 5px;
     margin-left: 30%;
     margin-right: 30%;
     margin-bottom: 35px;
-}
-
-.color-formation{
-    color: #638378;
 }
 
 .cont-formation2{
@@ -207,6 +209,11 @@ p, li{
     margin-right: 20%;
 }
 
+.color-formation{
+    color: #638378;
+}
+
+
 /* ----------------------- */
 
 
@@ -214,3 +221,108 @@ footer{
     background-color: #333333;
     padding: 35px;
 }
+
+/* ----------Page Projets---------- */
+
+.cont-nav2{
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* background-color: #454545; */
+    background-color: #292929;
+    color: white;
+    width: 100%;
+    /* padding: 0px 20px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cont-nav2 h1{
+    padding: 0 20px;
+}
+
+.cont-nav2 li{
+    display: inline;
+    list-style-type: none;
+    font-family:'Franklin Gothic Medium';
+    padding: 0 50px;
+} 
+
+.cont-nav2 ul{
+    margin-right: 100px;
+}
+
+.cont-nav2 a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.cont-nav2 a:hover{
+    color: #7F9E94;
+}
+/* ----------------------- */
+
+.cont-projets{
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 63px;
+    text-align: center;
+    /* background-color: #638378; */
+}
+
+.projets{
+    display: flex;
+    justify-content: center;
+}
+
+.cont-projets img{
+    margin-top: 20px;
+    height: 200px;
+    transition: transform 0.3s ease; /* Animation du contenu pour l'effet fixe */
+
+}
+
+.cont-projets ul{
+    padding: 0;
+    margin-top: 80px;
+}
+
+.cont-projets li{
+    display: inline-block;
+    transition: transform 0.5s ease; /* Animation du contenu pour l'effet fixe */
+
+}
+
+.projets-card{
+    background-color: #cccccc;
+    margin-right: 50px;
+    border: solid 2px #292929;
+    border-radius: 5px;
+    padding: 20px 20px;
+    box-shadow: 10px 10px 20px #00000066;
+    transition: transform 0.5s ease;
+
+}
+
+.projets-card a{
+    text-decoration: none;
+    color: #292929 ;
+}
+
+.project-title{
+    padding-bottom: 5px;
+    border-bottom: solid 2px #292929;
+}
+
+.projets :hover{
+    transform: scale(1.05);
+}
+
+.projets:hover img, .projets:hover li{
+    transform: scale(1);
+}
+
+
+/* ----------Page Projets---------- */
