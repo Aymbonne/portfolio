@@ -298,6 +298,7 @@ footer{
 .projets-card{
     background-color: #cccccc;
     margin-right: 50px;
+    margin-left: 50px;
     border: solid 2px #292929;
     border-radius: 5px;
     padding: 20px 20px;
