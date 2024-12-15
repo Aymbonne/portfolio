@@ -1,0 +1,216 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+h1,h2,h3{
+    font-family:'Franklin Gothic Medium';
+}
+
+h2,h3{
+    font-family:'Franklin Gothic Medium';
+    color:#292929;
+}
+
+h2{
+    font-size: 2.5em
+}
+
+p, li{
+    font-family: Verdana;
+}
+
+.cont-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* background-color: #454545; */
+    background-color: #292929;
+    color: white;
+    width: 100%;
+    /* padding: 0px 20px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cont-nav h1{
+    padding: 0 20px;
+}
+
+.cont-nav li{
+    display: inline;
+    list-style-type: none;
+    font-family:'Franklin Gothic Medium';
+    padding: 0 20px;
+} 
+
+.cont-nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* ----------------------- */
+
+.bio{
+    margin-top: 100px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 40px;
+}
+
+.titre-bio, .bio p{
+    text-align: center;
+}
+
+.bio h2{
+    display: inline-block;
+    font-size: 2.5em;
+    border-bottom: solid 1px #292929;
+}
+
+.contact ul{
+    display: flex;
+    padding-left: 30px;
+    padding-top: 5px;
+    list-style-type: none;
+}
+
+.contact li{
+    position: relative;
+    margin-right: 20px;
+}
+
+.contact a{
+    color: black;
+}
+
+.contact i{
+    transition: color 0.2s ease, font-size 0.2s ease;
+}
+
+.contact i:hover{
+    color: #526F7A;
+    font-size: 2.5em;
+}
+
+.tel-num{
+    opacity: 0; /* Caché par défaut */
+    visibility: hidden; /* Empêche toute interaction ou affichage */
+    transition: opacity 0.5s ease, visibility 0.5s ease; /* Transition fluide */
+    position: absolute;
+    top: 35px; 
+    left: -35px;
+    white-space: nowrap;
+    font-size: 0.9em;
+    color: #333333;
+    padding: 2px;
+    background-color: white;
+    border: solid 1px #cccccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px #00000033;
+}
+
+
+.tel:hover .tel-num {
+    opacity: 1; /* Rend visible */
+    visibility: visible; /*Débloque l'affichage*/
+}
+
+
+
+/* ----------------------- */
+
+.skills{
+    text-align: center;
+    background-color:#638378;
+    color: #292929;
+    padding-bottom: 50px;
+}
+
+.skills h2{
+    display: inline-block;
+    border-bottom: solid 1px rgb(182, 182, 182);
+}
+
+.skills ul, li {
+    padding: 0;
+    display: inline;
+    list-style-type: none;
+}
+
+.cont-language{
+    margin-bottom: 50px;
+}
+.cont-language h3{
+    font-size: 1.5em;
+}
+
+.cont-language li{
+    margin-right: 10px;
+    transition: color 0.2s ease;
+}
+
+.cont-language li:hover{
+    color: #7F9E94;
+}
+
+.cont-app h3{
+    font-size: 1.5em
+}
+
+.cont-app li{
+    margin-right: 20px;
+    transition: color 0.2s ease;
+}
+
+.cont-app li:hover{
+    color: #7F9E94 ;
+}
+
+/* ----------------------- */
+
+.formation{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: #7F9E94;
+}
+
+.cont-formation1{
+    display: inline-block;
+    background-color: #cccccc;
+    border-radius: 5px;
+    border: solid 2px #717171;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15); /* Ombre subtile bas-droite */
+    /* box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.3); Ombre bas-droite uniquement */
+    padding: 5px;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 35px;
+}
+
+.color-formation{
+    color: #638378;
+}
+
+.cont-formation2{
+    display: inline-block;
+    background-color: #cccccc;
+    border-radius: 5px;
+    border: solid 2px #717171;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15); /* Ombre subtile bas-droite */
+    /* box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.3); Ombre bas-droite uniquement */
+    padding: 5px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+/* ----------------------- */
+
+
+footer{
+    background-color: #333333;
+    padding: 35px;
+}
